@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Livewire\EditPost;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('posts/create', 'posts.create')->name('create-post');
+Route::get('post/{post}/edit', EditPost::class);
 
 Route::get('/', function () {
     return view('welcome');
