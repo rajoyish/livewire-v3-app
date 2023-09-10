@@ -18,6 +18,10 @@
                     <x-nav-link :href="route('create-post')" :active="request()->routeIs('create-post')">
                         {{ __('Posts') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('toggle-help')" :active="request()->routeIs('toggle-help')">
+                        {{ __('Toggle Helps') }}
+                    </x-nav-link>
+
                 </div>
             </div>
 
